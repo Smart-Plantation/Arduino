@@ -75,7 +75,7 @@ void loop() {
     get_sensor_data_and_print();
   }
 
-  //Turn off water after 3 seconds
+  //Turn off water after 15 seconds
   if(watering == true){
     if( millis() - prev_water_time >= 15000)
       turn_relay_off();    
